@@ -22,7 +22,7 @@ public class BalancedBrackets {
     }
 
     // Balanced Brackets
-    public static boolean isBalanced(String input) {
+    public static boolean balancedBrackets(String input) {
         Stack<Character> stack = new Stack<>();
 
         for (char ch : input.toCharArray()) {
@@ -59,7 +59,7 @@ public class BalancedBrackets {
         System.out.println("Is balanced parenthesis? " + isBalancedParenthesis);
 
         String input2 = "{[()]}";
-        boolean isBalancedBrackets = isBalanced(input2);
+        boolean isBalancedBrackets = balancedBrackets(input2);
         System.out.println("Is balanced brackets? " + isBalancedBrackets);
     }
 }
